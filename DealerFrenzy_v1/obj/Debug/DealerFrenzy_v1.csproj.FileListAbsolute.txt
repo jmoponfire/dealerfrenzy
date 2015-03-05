@@ -1,0 +1,5 @@
+c:\users\jphillips\documents\visual studio 2012\Projects\DealerFrenzy_v1\DealerFrenzy_v1\bin\DealerFrenzy_v1.dll
+c:\users\jphillips\documents\visual studio 2012\Projects\DealerFrenzy_v1\DealerFrenzy_v1\bin\DealerFrenzy_v1.pdb
+c:\users\jphillips\documents\visual studio 2012\Projects\DealerFrenzy_v1\DealerFrenzy_v1\obj\Debug\DealerFrenzy_v1.csprojResolveAssemblyReference.cache
+c:\users\jphillips\documents\visual studio 2012\Projects\DealerFrenzy_v1\DealerFrenzy_v1\obj\Debug\DealerFrenzy_v1.dll
+c:\users\jphillips\documents\visual studio 2012\Projects\DealerFrenzy_v1\DealerFrenzy_v1\obj\Debug\DealerFrenzy_v1.pdb

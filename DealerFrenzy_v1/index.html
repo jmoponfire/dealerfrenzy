@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap-3.2.0.min.css" />
+    <script src="scripts/jquery-1.11.2.min.js"></script>
+    <script src="scripts/bootstrap-3.2.0.min.js"></script>
+
+    <style>
+
+       button {
+
+            height:150px;
+            width:250px;
+            font-size:30px;
+       }
+
+       #buy {
+           background-color:green;
+           
+       }
+
+       #sell {
+           background-color:red;
+       }
+
+       .spacer {
+           height: 50px;
+       }
+       
+       .row {
+            margin: 15px;
+            padding: 30px;
+        }
+    </style>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#state").on('change', function () {
+                switch (this.value) {
+                    case '1':
+                        $('#city').html('<option value="0">Select City</option>');
+                        $('#city').append('<option value="1">Sacramento</option>');
+                        $('#city').append('<option value="2">SF/Bay Area</option>');
+                        break;
+                    case '2':
+                        $('#city').html('<option value="0">Select City</option>');
+                        $('#city').append('<option value="1">Reno</option>');
+                        $('#city').append('<option value="2">Las Vegas</option>');
+                        break;
+                    default:
+                        break;
+                }
+
+            });
+          
+
+        });
+    </script>
+
+     
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4"><button id="buy">Buy</button></div>
+        <div class="col-sm-4"><button id="sell">Sell</button></div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="border:dotted;">
+        <div class="col-sm-3"><label>Zip Code</label></div>
+        <div class="col-sm-3"><input type="text" id="zip" /></div>
+        <div class="col-sm-3"><label>Distance</label></div>
+        <div class="col-sm-3"><input type="text" id="distance"></input></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="border:dotted;">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"><label>Transaction</label></div>
+        <div class="col-sm-3">
+            <select id="transaction">
+                <option value="0">Select Transaction</option>
+                <option value="1">Big Sale</option>
+                <option value="2">Live Block</option>
+                <option value="3">Buy It Now!</option>
+            </select>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="border:dotted;">
+        <div class="col-sm-3"><label>Region</label></div>
+        <div class="col-sm-3">
+            <select id="state">
+                <option value="0">Select State</option>
+                <option value="1">CA</option>
+                <option value="2">NV</option>
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <select id="city">
+                <option value="0">Select City</option>
+                <option value="1">Sacramento</option>
+                <option value="2">SF/Bay Area</option>
+                <option value="3">Los Angeles</option>
+            </select>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    
+</body>
+</html>
